@@ -1,0 +1,68 @@
+@media screen and (max-width: 779px) {
+    #desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    #mobile {
+        display: none;
+    }
+}
+
+nav.topbar {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, .8);
+}
+
+nav.topbar ul {
+    width: fit-content;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+nav.topbar ul li {
+    float: left;
+}
+
+nav.topbar ul li a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color .1s ease-in-out;
+}
+
+nav.topbar ul li a:hover {
+    color: rgb(192, 192, 192);
+}
+
+#mobile ul {
+    margin: 0;
+    float: right;
+}
+
+#mobile ul li {
+    float: none;
+    text-align: right;
+}
+
+#mobile ul img {
+    padding: 20px;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+#mobile ul #hideable {
+    display: none;
+    float: right;
+}

@@ -1,0 +1,71 @@
+.media-block {
+    width: min-content;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, .2);
+    background-color: rgb(255, 255, 255);
+    transition: box-shadow .2s;
+}
+
+.media-block .content {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+}
+
+.media-block:hover {
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, .4);
+}
+
+.media-block img.photo {
+    display: block;
+    object-fit: cover;
+    width: 360px;
+    height: 240px;
+}
+
+.media-block .content .title {
+    border-bottom: 1px solid var(--text-light);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.media-block .content .title img.flag {
+    height: .8em;
+    display: inline;
+    vertical-align: baseline;
+}
+
+.media-block .content .title .subtitle {
+    font-size: .5em;
+    color: var(--text-medium);
+}
+
+.media-block .content img.coatofarms {
+    height: 80px;
+    display: inline-block;
+    margin: 5px;
+    float: right;
+}
+
+.media-block .content .button {
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: var(--text-light);
+    transition: background-color .2s ease-in-out;
+}
+
+.media-block:hover .content .button {
+    background-color: var(--text-medium);
+}
+
+.media-block .content .button:hover {
+    background-color: var(--text-dark);
+}

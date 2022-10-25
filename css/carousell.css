@@ -1,0 +1,14 @@
+.carousell {
+    margin: 20px;
+    padding: 0px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousell img {
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}

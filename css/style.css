@@ -1,0 +1,49 @@
+:root {
+    --text-dark: rgb(64, 64, 64);
+    --text-medium: rgb(128, 128, 128);
+    --text-light: rgb(192, 192, 192);
+
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+}
+
+body {
+    margin: 0;
+    background-color: rgb(239, 239, 239);
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.page {
+    width: min-content;
+    margin: auto;
+}
+
+#macro-container {
+    display: grid;
+    width: fit-content;
+    gap: 20px;
+    margin: 20px;
+}
+
+@media screen and (min-width: 780px) {
+    #macro-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    #macro-container {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (min-width: 1540px) {
+    #macro-container {
+        grid-template-columns: repeat(4, auto);
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ethan Arnold's Media Gallery</title>
+        <meta charset="utf-8">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/carousell.css">
+        <link rel="stylesheet" href="css/media-block.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Desktop Navbar -->
+        <nav id="desktop" class="topbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Cities</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Donate</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Navbar -->
+        <nav id="mobile" class="topbar">
+            <ul>
+                <li><img id="hamburger" src="img/icons/hamburger.svg"></li>
+                <div id="hideable">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Cities</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Donate</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Content -->
+        <div class="page">
+            <!-- Carousell -->
+            <div class="carousell">
+                <img src="img/modena.jpg">
+            </div>
+
+            <!-- Grid of Images -->
+            <div id="macro-container"></div>
+        <div style="text-align: center; margin: auto; width: fit-content;">&copy; Ethan Arnold 2022</div>
+
+        <!-- JavaScript -->
+        <script src="js/navbar.js"></script>
+        <script src="js/populate.js"></script>
+        <script>
+            populatePage(cities);
+            populatePage(cities);
+        </script>
+    </body>
+</html>
