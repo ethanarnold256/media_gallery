@@ -42,17 +42,22 @@
 
         <!-- Content -->
         <div class="page">
+
             <!-- Carousell -->
-            <div class="carousell">
-                <img src="img/modena.jpg">
+            <div id="carousell1" class="carousell">
+                <img id="carousellImage1" src="img/modena.jpg" alt="Ferarri 360 Modena">
             </div>
+            <ul id="carousellButtons1" class="carousellButtons"></ul>
 
             <!-- Grid of Images -->
             <div id="macro-container"></div>
+        
+        </div>
         <div style="text-align: center; margin: auto; width: fit-content;">&copy; Ethan Arnold 2022</div>
 
         <!-- JavaScript -->
         <script src="js/navbar.js"></script>
+        <script src="js/carousell.js"></script>
         <script src="js/populate.js"></script>
         <script>
             populatePage(cities);

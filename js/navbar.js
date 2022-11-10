@@ -2,7 +2,7 @@ hamburgerButton = document.getElementById("hamburger");
 hamburgerMenu = document.getElementById("hideable")
 
 function toggleMenu(){
-    if(hamburgerMenu.style.display == "none") {
+    if(hamburgerMenu.style.display == "none" || hamburgerMenu.style.display == "") {
         hamburgerMenu.style.display = "block";
         hamburgerButton.src = "img/icons/cross.svg";
     } else {

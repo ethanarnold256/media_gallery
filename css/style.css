@@ -3,6 +3,10 @@
     --text-medium: rgb(128, 128, 128);
     --text-light: rgb(192, 192, 192);
 
+    --box-shadow: 0 0 10px 0px rgba(0, 0, 0, .2);
+    --box-shadow-hover: 0 0 10px 0px rgba(0, 0, 0, .4);
+    --box-shadow-transition: transition: box-shadow .2s;
+
     font-family: 'Montserrat', sans-serif;
     color: var(--text-dark);
 }

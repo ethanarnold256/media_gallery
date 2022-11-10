@@ -3,12 +3,33 @@
     padding: 0px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--box-shadow-transition);
+}
+
+.carousell:hover {
+    box-shadow: var(--box-shadow-hover);
 }
 
 .carousell img {
     margin: 0;
     object-fit: cover;
     object-position: center;
-    height: 100%;
+    aspect-ratio: 4 / 3;
     width: 100%;
+}
+
+.carousellButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.carousellButtons li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+
+.carousellButtons li#current {
+    font-weight: bold;
 }
